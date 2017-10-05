@@ -1,0 +1,55 @@
+.login {
+  display: block;
+  color: #FFFFFF;
+  background-color: #1C9F00;
+  border: 1px solid #1C9F00;
+  width: 100%;
+  padding: 6px 12px;
+  font-family: "HelveticaNeueW01-45Ligh",Helvetica,Arial,sans-serif;
+  font-size: 1.1em;
+}
+
+.button:hover {
+  background-color: #20b900;
+}
+
+.auth{
+  margin-top: 55px;
+  width: 465px;
+  height: 75px;
+  margin-left: 280px;
+  padding-right: 88px;
+  border: 3px solid #F0F1F2;
+  background :#F0F1F2;
+  height: 337px;
+  border-radius: 6px;
+}
+
+.forgot{
+  padding-right: 17px;
+  text-align: right;
+}
+.IDs{
+  text-align: left;
+  margin-left: -13%;
+}
+
+.h1,h1{
+  font-size: 30px;
+  margin-left: 30% !important;
+}
+
+.form-horizontal .form-group {
+  margin-right: -125px;
+  margin-left: -101px;
+}
+
+.form-control{
+  background-color: #fff;
+}
+
+.container1{
+  padding-left: 25%;
+  padding-right: 42%;
+  padding-top: 5%;
+}
