@@ -6,7 +6,7 @@ import Header from './component/common/Header';
 import Footer from './component/common/Footer';
 import Styles from './app.css';
 import Main from './routes/routes';
-import config from './config'
+import config from './config';
 
 class App extends React.Component {
   render() {

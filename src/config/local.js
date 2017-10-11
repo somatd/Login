@@ -1,7 +1,8 @@
 const localConfig = {
   baseUrlPath: 'http://localhost',
-   printPortAPI: ':6127',
-   version: ''
+  apiHostName: 'http://localhost',
+  port: '6127',
+  credentialsFlag: false
 }
 
 module.exports = localConfig;

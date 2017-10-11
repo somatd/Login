@@ -34,10 +34,9 @@
     "webpack-dev-server": "^2.7.1"
   },
   "scripts": {
-    "start": "webpack-dev-server --content-base src/ --inline --hot",
-    "build": "webpack -d && cp 'src/index.html' 'dist/' ",
-    "build:dev": "webpack -d && npm start",
-    "build:local": "webpack -d && npm start"
+    "start": "webpack -d && webpack-dev-server --content-base src/ --inline --hot",
+    "build": "webpack -d && 'src/index.html' 'dist/' ",
+    "build:dev": "webpack -d && npm start"
   },
     "browser": {
       "net": false,
