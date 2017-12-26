@@ -6,8 +6,6 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Route, Redirect } from 'react-router';
-//import { connect } from 'react-redux';
-
 
 class SelectAuthenticator extends React.Component {
 	constructor() {
@@ -130,12 +128,12 @@ doSmsSubmit(eve) {
 	var result = this.props.location.state;
 	var token = result.response.token;
 	var selectedPhoneNumber = this.state.selectedPhoneNumber;
-	//console.log('selectedPhoneNumber='+selectedPhoneNumber);
+
 	let data = {
    	token : token,
    	credential_id : selectedPhoneNumber,
   }
-	//console.log("data -> "+data);
+
 	let axiosConfig ={
     headers : {'content-type': 'application/JSON'}
 	};
@@ -145,11 +143,7 @@ doSmsSubmit(eve) {
       alert('ERROR: '+err.message)
       return
     }
-    //  response.finalResponse =
-    //         {
-    //  token : token,
-    //  credential_id : selectedPhoneNumber
-    //  }
+
     result = response.status;
 
 		response.data =
@@ -157,8 +151,7 @@ doSmsSubmit(eve) {
 				 'token' : token,
 				 'type' : 'SMS'
 			};
-		// console.log("result.token="+JSON.stringify(response));
-		// console.log("result.token="+response.data.token);
+
 
 		if(result == 200){
 			this.props.history.push({pathname:'/securityCenter',
@@ -184,7 +177,7 @@ doTotpSubmit(e){
 			'token' : token,
 			'type' : 'TOTP'
 		};
-		//console.log(totp);
+
 		this.props.history.push({pathname:'/securityCenter',
 		state:{
 			response : response.data

@@ -4,7 +4,7 @@ import Styles from './styles.css';
 export class Footer extends React.Component {
 	constructor(){
 		super()
-}
+	}
 
 render(){
 	return(
@@ -21,11 +21,10 @@ render(){
 			<br/><br/>
 		</div>
 		<div className="footer1">
-		<p>Market volatility, volume and system availability may delay account access and trade executions.</p>
-		<p>TD Ameritrade, Inc., member FINRA/SIPC. This is not an offser or solicitation in any jurisdiction where we are not authorized to do business. TD Ameritrade is a trademark jointly owned by TD Ameritrade IP Company, Inc. and The Toronto-Dominion Bank. © 2017 TD Ameritrade IP Company, Inc.All rights reserved</p>
-	</div>
-	</div>
-
+			<p>Market volatility, volume and system availability may delay account access and trade executions.</p>
+			<p>TD Ameritrade, Inc., member FINRA/SIPC. This is not an offser or solicitation in any jurisdiction where we are not authorized to do business. TD Ameritrade is a trademark jointly owned by TD Ameritrade IP Company, Inc. and The Toronto-Dominion Bank. © 2017 TD Ameritrade IP Company, Inc.All rights reserved</p>
+		</div>
+		</div>
 	);
 }
 }

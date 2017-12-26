@@ -6,17 +6,17 @@ export class Success extends React.Component {
   super();
  }
 
-render(){
+ render(){
   var result = this.props.location.state
   var code = result.response.code
   var status = result.response.status
 
-return(
-  <div className="final">
-   <p style={{fontSize:'35px', marginLeft:'-200px'}}>Successfully Logged in to your TD AmeritradeAccount</p>
-  </div>
-);
-}
+  return(
+    <div className="final">
+      <p style={{fontSize:'35px', marginLeft:'-200px'}}>Successfully Logged in to your TD AmeritradeAccount</p>
+    </div>
+  );
+  }
 }
 
 export default Success;
